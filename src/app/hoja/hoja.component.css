@@ -1,0 +1,57 @@
+.cabecera {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  background-color: #114b5f;
+  margin: auto;
+  color: #f0e7d8;
+  transition: all 0.4s ease-in;
+}
+.cabecera img {
+  width: 15vw;
+  border-radius: 15vw;
+  margin: 1vw;
+}
+.cabecera .links {
+  margin: auto 1vw auto auto;
+  background-color: #028090;
+  padding: 20px;
+}
+.informacion h2 {
+  margin: auto;
+  font-size: 3vw;
+  text-align: center;
+}
+
+.cabecera span {
+  margin: 0.5vw;
+  font-size: 4vw;
+}
+.cabecera span:hover {
+  transform: scale(1.5);
+  transition: all 0.4s ease-in-out;
+  box-shadow: 0px 0px 10px;
+  border-radius: 50%;
+  color: beige;
+}
+@media screen and (max-width: 480px) {
+  .cabecera {
+    display: block;
+    width: 100%;
+    height: auto;
+    background-color: black;
+    transition: all 2s;
+  }
+  .informacion .links {
+    font-size: 3vw;
+    text-align: center;
+    color: cyan;
+    transition: all 1s ease-in;
+  }
+  .cabecera img {
+    width: 25vw;
+    border-radius: 15vw;
+    margin: 1vw;
+    transition: all 0.3s ease-in;
+  }
+}
