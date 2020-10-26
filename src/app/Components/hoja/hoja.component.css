@@ -34,6 +34,27 @@
   border-radius: 50%;
   color: beige;
 }
+.navi {
+  margin: 1vw;
+  font-size: 2vw;
+  background-color: #07070a;
+  padding: 1vw;
+
+  text-align: center;
+}
+.navi a {
+  text-decoration: none;
+  margin: 1vw;
+  background-color: #24272b;
+  color: #f0e7d8;
+}
+.navi :hover {
+  transform: scale(1.5);
+  transition: all 0.4s ease-in-out;
+  box-shadow: 0px 0px 10px;
+  color: beige;
+  border-radius: 25px;
+}
 @media screen and (max-width: 480px) {
   .cabecera {
     display: block;
