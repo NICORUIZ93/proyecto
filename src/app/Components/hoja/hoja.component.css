@@ -3,8 +3,8 @@
   align-items: center;
   text-align: center;
   background-color: #114b5f;
-  margin: auto;
-  color: #f0e7d8;
+  margin: auto 1vw;
+  color: #fbfdfc;
   transition: all 0.4s ease-in;
 }
 .cabecera img {
@@ -16,6 +16,12 @@
   margin: auto 1vw auto auto;
   background-color: #028090;
   padding: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.cabecera span {
+  margin: 0.5vw;
+  font-size: 4vw;
 }
 .informacion h2 {
   margin: auto;
@@ -23,36 +29,33 @@
   text-align: center;
 }
 
-.cabecera span {
-  margin: 0.5vw;
-  font-size: 4vw;
-}
 .cabecera span:hover {
   transform: scale(1.5);
   transition: all 0.4s ease-in-out;
   box-shadow: 0px 0px 10px;
   border-radius: 50%;
-  color: beige;
+  color: fbfdfc;
 }
 .navi {
-  margin: 1vw;
-  font-size: 2vw;
-  background-color: #07070a;
-  padding: 1vw;
-
+  display: flex;
+  background-color: #028090;
+  color: #fbfdfc;
   text-align: center;
+  cursor: pointer;
+  margin: 1vw;
+  height: 5vw;
 }
 .navi a {
-  text-decoration: none;
-  margin: 1vw;
-  background-color: #24272b;
-  color: #f0e7d8;
+  background-color: #028090;
+  font-weight: bold;
+  margin: auto;
+  cursor: pointer;
 }
 .navi :hover {
-  transform: scale(1.5);
+  transform: scale(1.1);
   transition: all 0.4s ease-in-out;
-  box-shadow: 0px 0px 10px;
-  color: beige;
+  box-shadow: 0px 2px 5px;
+  color: #fbfdfc;
   border-radius: 25px;
 }
 @media screen and (max-width: 480px) {
