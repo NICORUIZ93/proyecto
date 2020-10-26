@@ -6,15 +6,39 @@
   </div>
 
   <div class="links">
-    <span class="material-icons">home</span>
-    <span class="material-icons">phone</span>
-    <span class="material-icons">facebook</span>
-    <span class="material-icons">cloud</span>
+    <a href="https://github.com/NICORUIZ93" class="material-icons">home</a>
+    <a class="material-icons">phone</a>
+    <a href="https://www.facebook.com/" class="material-icons">facebook</a>
+    <a class="material-icons">cloud</a>
   </div>
 </header>
 
 <nav class="navi">
-  <a>Datos Personales</a>
-  <a>Datos Profesionales</a>
-  <a>Datos Academicos</a>
+  <span (click)="datos(1)">Datos Personales </span>
+  <span (click)="datos(2)">Datos Profesionales</span>
+  <span (click)="datos(3)">Datos Academicos</span>
 </nav>
+
+<span [ngSwitch]="Dseleccion">
+  <p *ngSwitchCase="1">
+    Nombre: Nicolas Ruiz <br />
+    Telefono: 3142383930 <br />
+    Fecha de nacimiento: 26 de Noviembre del 1993 <br />
+    Direccion: Cra 73 A BIS N 37-25 sur <br />
+    Correo electronico: Nicolasenriqueruiz93@hotmail.com <br />
+    Telefono: 3142383930 <br />
+  </p>
+  <p *ngSwitchCase="2">
+    Aqui va la informacion Profesional!!! <br />
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo dolorum quae,
+    molestiae quas, nam reprehenderit deleniti rerum ducimus quaerat enim
+    repudiandae, eaque omnis. Quisquam obcaecati aliquam animi sed error illum?
+  </p>
+  <p *ngSwitchCase="3">
+    Aqui va la informacion Academica!!! <br />
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus fuga
+    maxime libero temporibus repudiandae placeat quod nobis! Dolores facilis
+    saepe ab quasi dignissimos illo laboriosam vero sint, amet voluptas culpa.
+  </p>
+  <p *ngSwitchDefault></p>
+</span>

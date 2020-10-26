@@ -1,15 +1,20 @@
 nav {
   background-color: #028090;
   display: flex;
-  font-size: 3vw;
+  font-size: 2vw;
   justify-content: center;
   margin: 1vw;
 }
 
 nav a {
   text-decoration: none;
-  margin: 3vw;
+  margin: 2vw;
   align-content: center;
   color: #fbfdfc;
-  font-weight: 1000;
+  font-weight: bolder;
+}
+
+footer {
+  margin-top: 50%;
+  background-color: #028090;
 }

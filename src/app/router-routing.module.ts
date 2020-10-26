@@ -7,6 +7,7 @@ import { AboutComponent } from './Components/about/about.component';
 const routes: Routes = [
   { path: 'home', component: HojaComponent },
   { path: 'about', component: AboutComponent },
+  { path: '**', component: HojaComponent },
 ];
 
 @NgModule({
